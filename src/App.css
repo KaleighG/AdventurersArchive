@@ -1,38 +1,157 @@
-.App {
+h2 {
+  color: whitesmoke;
   text-align: center;
+  font-size: 2.5em;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rollBut {
+  background-color: rgb(92, 144, 159);
+  border-radius: 100%;
+  width: 25%;
+  cursor: pointer;
+  margin: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.abilitiesLabeled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -35%;
+  font-size: 1.25em;
+  margin-bottom: -15%;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 4em;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.parchmentBackground {
+  text-align: center;
+  background-image: url("parch.jpg");
+  background-color: #f4e5c4;
+  height: 800px;
+  width: 850px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  border-radius: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.classPickTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  padding: 5%;
+}
+.Start {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  padding-top: 30%;
+  border: 3em;
+}
+
+.characterDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -40%;
+  font-size: 1.25em;
+  color: black;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.resetButPosition {
+  margin-top: 25%;
+}
+.characterTitle {
+  color: rgb(100, 185, 83);
+}
+.characterAbilities {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15%;
+}
+.startBut {
+  background-color: rgb(92, 144, 159);
+  border-radius: 100%;
+  width: 25%;
+  cursor: pointer;
+}
+body {
+  background-image: url(scenery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.menu-button {
+  text-align: center;
+  color: rgb(100, 185, 83);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5em;
+  padding: 50%;
+}
+
+.menuBut {
+  font-weight: bolder;
+  background-color: transparent;
+  font-size: 1.5em;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 4px;
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.menuBut:hover {
+  cursor: pointer;
+  background-color: rgb(7, 96, 126);
+  opacity: 50%;
+}
+
+.menu-options {
+  background-image: url("parch.jpg");
+  height: 20em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 30%;
+  justify-content: space-evenly;
 }
